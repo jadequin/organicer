@@ -1,14 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js Apperinomino"/>
+  <div id="app">
+    <tasks />
+
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js Apperinomino"/>
+  </div>
+
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Tasks from "@/components/tasks.vue";
 
 export default {
   name: 'App',
   components: {
+    Tasks,
     HelloWorld
   }
 }
