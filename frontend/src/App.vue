@@ -1,16 +1,22 @@
 <template>
   <div id="app">
-    <tasks />
+    <div id="possible-new-content">
 
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js Apperinomino"/>
+    </div>
+    <div id="other-content">
+      <img alt="Vue logo" src="./assets/logo.png">
+      <HelloWorld msg="Welcome to Your Vue.js Apperinomino"/>
+    </div>
+    <div id="task-overview">
+      <tasks />
+    </div>
+
   </div>
-
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import Tasks from "@/components/tasks.vue";
+import Tasks from "@/components/task-overview.vue";
 
 export default {
   name: 'App',
@@ -28,6 +34,24 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background: darkslategray;
   margin-top: 60px;
+  display: flex;
+  width: 100%;
+}
+
+#possible-new-content {
+  flex: 1;
+  padding: 20px;
+}
+
+#task-overview {
+  flex: 1;
+  padding: 20px;
+}
+
+#other-content {
+  flex: 1;
+  padding: 20px;
 }
 </style>
